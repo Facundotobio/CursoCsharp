@@ -1,0 +1,15 @@
+C:\Users\Lenovo\source\cursoC#\cursoC#\bin\Debug\net6.0\cursoC#.exe
+C:\Users\Lenovo\source\cursoC#\cursoC#\bin\Debug\net6.0\cursoC#.deps.json
+C:\Users\Lenovo\source\cursoC#\cursoC#\bin\Debug\net6.0\cursoC#.runtimeconfig.json
+C:\Users\Lenovo\source\cursoC#\cursoC#\bin\Debug\net6.0\cursoC#.dll
+C:\Users\Lenovo\source\cursoC#\cursoC#\bin\Debug\net6.0\cursoC#.pdb
+C:\Users\Lenovo\source\cursoC#\cursoC#\obj\Debug\net6.0\cursoC#.csproj.AssemblyReference.cache
+C:\Users\Lenovo\source\cursoC#\cursoC#\obj\Debug\net6.0\cursoC#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\source\cursoC#\cursoC#\obj\Debug\net6.0\cursoC#.AssemblyInfoInputs.cache
+C:\Users\Lenovo\source\cursoC#\cursoC#\obj\Debug\net6.0\cursoC#.AssemblyInfo.cs
+C:\Users\Lenovo\source\cursoC#\cursoC#\obj\Debug\net6.0\cursoC#.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\cursoC#\cursoC#\obj\Debug\net6.0\cursoC#.dll
+C:\Users\Lenovo\source\cursoC#\cursoC#\obj\Debug\net6.0\refint\cursoC#.dll
+C:\Users\Lenovo\source\cursoC#\cursoC#\obj\Debug\net6.0\cursoC#.pdb
+C:\Users\Lenovo\source\cursoC#\cursoC#\obj\Debug\net6.0\cursoC#.genruntimeconfig.cache
+C:\Users\Lenovo\source\cursoC#\cursoC#\obj\Debug\net6.0\ref\cursoC#.dll
