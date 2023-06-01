@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\source\\cursoC#\\cursoC#\\cursoC#.csproj": {}
+    "C:\\Users\\Lenovo\\Desktop\\cursoC#\\cursoC#.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\source\\cursoC#\\cursoC#\\cursoC#.csproj": {
+    "C:\\Users\\Lenovo\\Desktop\\cursoC#\\cursoC#.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\source\\cursoC#\\cursoC#\\cursoC#.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\cursoC#\\cursoC#.csproj",
         "projectName": "cursoC#",
-        "projectPath": "C:\\Users\\Lenovo\\source\\cursoC#\\cursoC#\\cursoC#.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\Desktop\\cursoC#\\cursoC#.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\source\\cursoC#\\cursoC#\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\Desktop\\cursoC#\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
