@@ -92,3 +92,148 @@ public struct Cliente
 public override string ToString() => $"Nombre: {name}, Telefono: {phone}, Direccion: {address}, Email: {email}, Nuevo Cliente: {isNew}";
 
 }
+
+// ejercicio 4 BUCLES
+// Ejercicio 1 - While
+// Escribe una tabla de multiplicar del 1 al 10 para un número entero que recibe por consola. 
+// Es decir, un programa que presente para el 1:
+// 1 x 1 = 1
+// 1 x 2 = 2
+// …
+// 1 x 10 = 10
+
+namespace MisBucles
+{
+    class While
+    {
+        static void Main(string[] args)
+        {
+            int i = 1;
+            while (i <= 10)
+            {
+                Console.WriteLine("1 x " + i + " = " + i);
+                i++;
+            }
+        }
+    }
+}
+// Ejercicio 2 - Do while
+// Escribe un programa que realice estos pasos:
+// Reciba al menos un número por consola
+// Determine si el número es positivo o negativo
+// Presente un contador para cada tipo (positivo y negativo).
+// Nota: el cero se puede abordar en una clase adicional ya que no es ni positivo ni negativo. Tienes completa libertad para elegir el formato de la salida.
+
+namespace MibucleFor
+{
+    class For
+    {
+        static void Main(string[] args)
+        {
+                int contadorPositivo = 0;
+                int contadorNegativo = 0;
+
+                Console.WriteLine("Ingrese números (ingrese 0 para salir):");
+
+        while (true)
+        {
+            int numero = Convert.ToInt32(Console.ReadLine());
+
+            if (numero == 0)
+                break;
+
+            if (numero > 0)
+                contadorPositivo++;
+            else
+                contadorNegativo++;
+        }
+        Console.WriteLine("Cantidad de números positivos: " + contadorPositivo);
+        Console.WriteLine("Cantidad de números negativos: " + contadorNegativo);
+
+        Console.WriteLine("Presione cualquier tecla para salir...");
+        Console.ReadKey();
+        }
+    }
+}
+// Ejercicio 3 - For
+// Escribe un programa que realice estos pasos:
+// Reciba 3 datos:
+// ancho
+// alto
+// relleno o no
+// Dibuje en consola con un mismo caracter, por ejemplo *, un rectángulo de las dimensiones introducidas y use el tercer dato para discernir si el rectángulo está relleno (tiene más * dentro) o no.
+// En caso de recibir el mismo número n dos veces debe dibujar un cuadrado de lado n.
+// Reto: Extiende el programa anterior para recibir otro número que sea el número de cuadrados o rectángulos que se deben dibujar en la pantalla. Ejemplos:
+
+// Input: 2,2,2, relleno = true
+// Output:
+
+// ** **
+
+// Input: 3, 4, 1, relleno = false
+// Output:
+
+class Programa
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Ingrese el ancho, alto, relleno (0 para no, 1 para sí) y cantidad de figuras separados por comas:");
+        string[] input = Console.ReadLine().Split(',');
+
+        int ancho = Convert.ToInt32(input[0]);
+        int alto = Convert.ToInt32(input[1]);
+        bool relleno = Convert.ToInt32(input[2]) == 1;
+        int cantidadFiguras = Convert.ToInt32(input[3]);
+
+        for (int i = 0; i < cantidadFiguras; i++)
+        {
+            if (ancho == alto)
+            {
+                DibujarCuadrado(ancho, relleno);
+            }
+            else
+            {
+                DibujarRectangulo(ancho, alto, relleno);
+            }
+
+            Console.WriteLine(); // Salto de línea entre figuras
+        }
+
+        Console.WriteLine("Presione cualquier tecla para salir...");
+        Console.ReadKey();
+    }
+
+    static void DibujarCuadrado(int lado, bool relleno)
+    {
+        Console.WriteLine("Cuadrado de lado " + lado);
+
+        for (int i = 0; i < lado; i++)
+        {
+            for (int j = 0; j < lado; j++)
+            {
+                if (relleno || i == 0 || i == lado - 1 || j == 0 || j == lado - 1)
+                    Console.Write("*");
+                else
+                    Console.Write(" ");
+            }
+            Console.WriteLine();
+        }
+    }
+
+    static void DibujarRectangulo(int ancho, int alto, bool relleno)
+    {
+        Console.WriteLine("Rectángulo de ancho " + ancho + " y alto " + alto);
+
+        for (int i = 0; i < alto; i++)
+        {
+            for (int j = 0; j < ancho; j++)
+            {
+                if (relleno || i == 0 || i == alto - 1 || j == 0 || j == ancho - 1)
+                    Console.Write("*");
+                else
+                    Console.Write(" ");
+            }
+            Console.WriteLine();
+        }
+    }
+}
