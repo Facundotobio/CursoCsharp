@@ -60,3 +60,35 @@ if(num > 10 && letra == 'a'){
 if(num < 10 || letra == 'a'){
     Console.WriteLine("El numero no es mayor a 10 y la letra es a");
 }
+
+// ejercicio 3
+//ESTRUCTURA DE DATOS   
+// Crea una estructura de datos para un cliente con estos campos:
+// Nombre completo
+// Teléfono
+// Dirección
+// Email
+// Si es nuevo cliente
+
+
+Cliente misClientes = new Cliente("Carlos", 22415342, "calle siempre viva 123", "sarasa@gmail.com", true);
+Console.WriteLine(misClientes.name);
+public struct Cliente
+{
+    public Cliente(string name, int phone, string address, string email, bool isNew)
+    {
+        this.name = name;
+        this.phone = phone;
+        this.address = address;
+        this.email =  email;
+        this.isNew = isNew;
+    }
+    public string name { get; set; }
+    public int phone { get; set; }
+    public string address { get; set; }
+    public string email { get; set; }
+    public bool isNew { get; set; }
+
+public override string ToString() => $"Nombre: {name}, Telefono: {phone}, Direccion: {address}, Email: {email}, Nuevo Cliente: {isNew}";
+
+}
