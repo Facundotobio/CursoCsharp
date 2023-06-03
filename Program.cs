@@ -7,59 +7,59 @@
 
 // Ejercise two ===> conversion de datos (Convert) y dataTypes.
 // Practica
-string str2 = "32";
-int miInt2 = Convert.ToInt32(str2);
-Console.Write("str2: " + miInt2);
-Console.WriteLine(" miInt2: " + miInt2);
-miInt2 = miInt2 +5;
-Console.WriteLine(" nuevo Int2:" + miInt2);
+// string str2 = "32";
+// int miInt2 = Convert.ToInt32(str2);
+// Console.Write("str2: " + miInt2);
+// Console.WriteLine(" miInt2: " + miInt2);
+// miInt2 = miInt2 +5;
+// Console.WriteLine(" nuevo Int2:" + miInt2);
 
-miInt2.ToString();
-Console.WriteLine(miInt2);
+// miInt2.ToString();
+// Console.WriteLine(miInt2);
 
-Console.WriteLine("Escriba su Edad");   // Convert. de str a entero
-// int edad = Convert.ToInt32(Console.ReadLine()); 
+// Console.WriteLine("Escriba su Edad");   // Convert. de str a entero
+// // int edad = Convert.ToInt32(Console.ReadLine()); 
 
-const float pi = 3.1415f;  // constante
-float unFloatCuaca = pi * 2;
-Console.WriteLine("El valor de pi es: " + pi + " y el de unFloatCuaca es: " + unFloatCuaca);
+// const float pi = 3.1415f;  // constante
+// float unFloatCuaca = pi * 2;
+// Console.WriteLine("El valor de pi es: " + pi + " y el de unFloatCuaca es: " + unFloatCuaca);
 
-int? i = null; // nullable ===> al principio del datatype va ? para que su valor sea null
-string? str3 = null; // nullable
+// int? i = null; // nullable ===> al principio del datatype va ? para que su valor sea null
+// string? str3 = null; // nullable
 
 // """Examen"""
 //Variables
-string nombre2 = "Facundo";
-string apellido = "Gonzalez";
-int edad2 = 23;
-bool sabeProgramar = false;
+// string nombre2 = "Facundo";
+// string apellido = "Gonzalez";
+// int edad2 = 23;
+// bool sabeProgramar = false;
 
 // Salida de datos
-Console.WriteLine("Nombre: " + nombre2 + ", Apellido: " + apellido + ", Edad: " + edad2 + ", Sabe programar: " + sabeProgramar);
+// Console.WriteLine("Nombre: " + nombre2 + ", Apellido: " + apellido + ", Edad: " + edad2 + ", Sabe programar: " + sabeProgramar);
 
 // SELECCIONA LOS MEJORES DATATYPES PARA LAS SIGUIENTES VARIABLES
 // Coche: puertas, ruedas, marca, ITV vigente
-byte puertas = 4;
-byte ruedas = 4;
-string marca = "Ford";
-bool itvVigente = true;
-// Mesa: peso, largo, material, color
-float peso = 5.5f;
-float largo = 1.5f;
-string material = "Madera";
-string color = "Marron";
+// byte puertas = 4;
+// byte ruedas = 4;
+// string marca = "Ford";
+// bool itvVigente = true;
+// // Mesa: peso, largo, material, color
+// float peso = 5.5f;
+// float largo = 1.5f;
+// string material = "Madera";
+// string color = "Marron";
 
-// OPERADORES 
-int num = 15;
-char letra = 'a';
+// // OPERADORES 
+// int num = 15;
+// char letra = 'a';
 
-if(num > 10 && letra == 'a'){
-    Console.WriteLine("El numero es mayor a 10 y la letra es a");
-}
+// if(num > 10 && letra == 'a'){
+//     Console.WriteLine("El numero es mayor a 10 y la letra es a");
+// }
 
-if(num < 10 || letra == 'a'){
-    Console.WriteLine("El numero no es mayor a 10 y la letra es a");
-}
+// if(num < 10 || letra == 'a'){
+//     Console.WriteLine("El numero no es mayor a 10 y la letra es a");
+// }
 
 // ejercicio 3
 //ESTRUCTURA DE DATOS   
@@ -71,27 +71,26 @@ if(num < 10 || letra == 'a'){
 // Si es nuevo cliente
 
 
-Cliente misClientes = new Cliente("Carlos", 22415342, "calle siempre viva 123", "sarasa@gmail.com", true);
-Console.WriteLine(misClientes.name);
-public struct Cliente
-{
-    public Cliente(string name, int phone, string address, string email, bool isNew)
-    {
-        this.name = name;
-        this.phone = phone;
-        this.address = address;
-        this.email =  email;
-        this.isNew = isNew;
-    }
-    public string name { get; set; }
-    public int phone { get; set; }
-    public string address { get; set; }
-    public string email { get; set; }
-    public bool isNew { get; set; }
+// Cliente misClientes = new Cliente("Carlos", 22415342, "calle siempre viva 123", "sarasa@gmail.com", true);
+// Console.WriteLine(misClientes.name);
+// public struct Cliente
+// {
+//     public Cliente(string name, int phone, string address, string email, bool isNew)
+//     {
+//         this.name = name;
+//         this.phone = phone;
+//         this.address = address;
+//         this.email =  email;
+//         this.isNew = isNew;
+//     }
+//     public string name { get; set; }
+//     public int phone { get; set; }
+//     public string address { get; set; }
+//     public string email { get; set; }
+//     public bool isNew { get; set; }
 
-public override string ToString() => $"Nombre: {name}, Telefono: {phone}, Direccion: {address}, Email: {email}, Nuevo Cliente: {isNew}";
-
-}
+// public override string ToString() => $"Nombre: {name}, Telefono: {phone}, Direccion: {address}, Email: {email}, Nuevo Cliente: {isNew}";
+// }
 
 // ejercicio 4 BUCLES
 // Ejercicio 1 - While
@@ -102,21 +101,22 @@ public override string ToString() => $"Nombre: {name}, Telefono: {phone}, Direcc
 // …
 // 1 x 10 = 10
 
-namespace MisBucles
-{
-    class While
-    {
-        static void Main(string[] args)
-        {
-            int i = 1;
-            while (i <= 10)
-            {
-                Console.WriteLine("1 x " + i + " = " + i);
-                i++;
-            }
-        }
-    }
-}
+// namespace MisBucles
+// {
+//     class While
+//     {
+//         static void Main(string[] args)
+//         {
+//             int i = 1;
+//             while (i <= 10)
+//             {
+//                 Console.WriteLine("1 x " + i + " = " + i);
+//                 i++;
+//             }
+//         }
+//     }
+// }
+
 // Ejercicio 2 - Do while
 // Escribe un programa que realice estos pasos:
 // Reciba al menos un número por consola
@@ -124,37 +124,38 @@ namespace MisBucles
 // Presente un contador para cada tipo (positivo y negativo).
 // Nota: el cero se puede abordar en una clase adicional ya que no es ni positivo ni negativo. Tienes completa libertad para elegir el formato de la salida.
 
-namespace MibucleFor
-{
-    class For
-    {
-        static void Main(string[] args)
-        {
-                int contadorPositivo = 0;
-                int contadorNegativo = 0;
+// namespace MibucleFor
+// {
+//     class For
+//     {
+//         static void Main(string[] args)
+//         {
+//                 int contadorPositivo = 0;
+//                 int contadorNegativo = 0;
 
-                Console.WriteLine("Ingrese números (ingrese 0 para salir):");
+//                 Console.WriteLine("Ingrese números (ingrese 0 para salir):");
 
-        while (true)
-        {
-            int numero = Convert.ToInt32(Console.ReadLine());
+//         while (true)
+//         {
+//             int numero = Convert.ToInt32(Console.ReadLine());
 
-            if (numero == 0)
-                break;
+//             if (numero == 0)
+//                 break;
 
-            if (numero > 0)
-                contadorPositivo++;
-            else
-                contadorNegativo++;
-        }
-        Console.WriteLine("Cantidad de números positivos: " + contadorPositivo);
-        Console.WriteLine("Cantidad de números negativos: " + contadorNegativo);
+//             if (numero > 0)
+//                 contadorPositivo++;
+//             else
+//                 contadorNegativo++;
+//         }
+//         Console.WriteLine("Cantidad de números positivos: " + contadorPositivo);
+//         Console.WriteLine("Cantidad de números negativos: " + contadorNegativo);
 
-        Console.WriteLine("Presione cualquier tecla para salir...");
-        Console.ReadKey();
-        }
-    }
-}
+//         Console.WriteLine("Presione cualquier tecla para salir...");
+//         Console.ReadKey();
+//         }
+//     }
+// }
+
 // Ejercicio 3 - For
 // Escribe un programa que realice estos pasos:
 // Reciba 3 datos:
@@ -173,67 +174,106 @@ namespace MibucleFor
 // Input: 3, 4, 1, relleno = false
 // Output:
 
-class Programa
+// class Programa
+// {
+//     static void Main(string[] args)
+//     {
+//         Console.WriteLine("Ingrese el ancho, alto, relleno (0 para no, 1 para sí) y cantidad de figuras separados por comas:");
+//         string[] input = Console.ReadLine().Split(',');
+
+//         int ancho = Convert.ToInt32(input[0]);
+//         int alto = Convert.ToInt32(input[1]);
+//         bool relleno = Convert.ToInt32(input[2]) == 1;
+//         int cantidadFiguras = Convert.ToInt32(input[3]);
+
+//         for (int i = 0; i < cantidadFiguras; i++)
+//         {
+//             if (ancho == alto)
+//             {
+//                 DibujarCuadrado(ancho, relleno);
+//             }
+//             else
+//             {
+//                 DibujarRectangulo(ancho, alto, relleno);
+//             }
+
+//             Console.WriteLine(); // Salto de línea entre figuras
+//         }
+
+//         Console.WriteLine("Presione cualquier tecla para salir...");
+//         Console.ReadKey();
+//     }
+
+//     static void DibujarCuadrado(int lado, bool relleno)
+//     {
+//         Console.WriteLine("Cuadrado de lado " + lado);
+
+//         for (int i = 0; i < lado; i++)
+//         {
+//             for (int j = 0; j < lado; j++)
+//             {
+//                 if (relleno || i == 0 || i == lado - 1 || j == 0 || j == lado - 1)
+//                     Console.Write("*");
+//                 else
+//                     Console.Write(" ");
+//             }
+//             Console.WriteLine();
+//         }
+//     }
+
+//     static void DibujarRectangulo(int ancho, int alto, bool relleno)
+//     {
+//         Console.WriteLine("Rectángulo de ancho " + ancho + " y alto " + alto);
+
+//         for (int i = 0; i < alto; i++)
+//         {
+//             for (int j = 0; j < ancho; j++)
+//             {
+//                 if (relleno || i == 0 || i == alto - 1 || j == 0 || j == ancho - 1)
+//                     Console.Write("*");
+//                 else
+//                     Console.Write(" ");
+//             }
+//             Console.WriteLine();
+//         }
+//     }
+// }
+
+//ejercicio 4 IF
+// using System;
+
+using System;
+using System.Collections.Generic;
+
+class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Ingrese el ancho, alto, relleno (0 para no, 1 para sí) y cantidad de figuras separados por comas:");
-        string[] input = Console.ReadLine().Split(',');
-
-        int ancho = Convert.ToInt32(input[0]);
-        int alto = Convert.ToInt32(input[1]);
-        bool relleno = Convert.ToInt32(input[2]) == 1;
-        int cantidadFiguras = Convert.ToInt32(input[3]);
-
-        for (int i = 0; i < cantidadFiguras; i++)
+        Dictionary<string, string> lenguajes = new Dictionary<string, string>()
         {
-            if (ancho == alto)
-            {
-                DibujarCuadrado(ancho, relleno);
-            }
-            else
-            {
-                DibujarRectangulo(ancho, alto, relleno);
-            }
+            { "1", "C#" },
+            { "2", "Java" },
+            { "3", "C++" }
+        };
 
-            Console.WriteLine(); // Salto de línea entre figuras
+        Console.WriteLine("Seleccione un lenguaje de programación:");
+        Console.WriteLine("1. C#");
+        Console.WriteLine("2. Java");
+        Console.WriteLine("3. C++");
+
+        string opcion = Console.ReadLine();
+
+        if (lenguajes.ContainsKey(opcion))
+        {
+            string lenguajeSeleccionado = lenguajes[opcion];
+            Console.WriteLine("Ha seleccionado: " + lenguajeSeleccionado);
+        }
+        else
+        {
+            Console.WriteLine("Opción inválida");
         }
 
         Console.WriteLine("Presione cualquier tecla para salir...");
         Console.ReadKey();
-    }
-
-    static void DibujarCuadrado(int lado, bool relleno)
-    {
-        Console.WriteLine("Cuadrado de lado " + lado);
-
-        for (int i = 0; i < lado; i++)
-        {
-            for (int j = 0; j < lado; j++)
-            {
-                if (relleno || i == 0 || i == lado - 1 || j == 0 || j == lado - 1)
-                    Console.Write("*");
-                else
-                    Console.Write(" ");
-            }
-            Console.WriteLine();
-        }
-    }
-
-    static void DibujarRectangulo(int ancho, int alto, bool relleno)
-    {
-        Console.WriteLine("Rectángulo de ancho " + ancho + " y alto " + alto);
-
-        for (int i = 0; i < alto; i++)
-        {
-            for (int j = 0; j < ancho; j++)
-            {
-                if (relleno || i == 0 || i == alto - 1 || j == 0 || j == ancho - 1)
-                    Console.Write("*");
-                else
-                    Console.Write(" ");
-            }
-            Console.WriteLine();
-        }
     }
 }
