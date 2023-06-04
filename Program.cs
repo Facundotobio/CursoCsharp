@@ -1,11 +1,12 @@
-﻿// // Ejercise one
+﻿// // Ejercise one (1)
 // Console.WriteLine("Escriba su nombre");
 // string nombre = Console.ReadLine();;
 // Console.WriteLine(nombre);
 // string hora = DateTime.Now.ToString("h:mm:ss tt");
 // Console.WriteLine("La hora es {0}", hora);
 
-// Ejercise two ===> conversion de datos (Convert) y dataTypes.
+
+// Ejercise two (2) - conversion de datos (Convert) y dataTypes.
 // Practica
 // string str2 = "32";
 // int miInt2 = Convert.ToInt32(str2);
@@ -61,7 +62,8 @@
 //     Console.WriteLine("El numero no es mayor a 10 y la letra es a");
 // }
 
-// ejercicio 3
+
+// ejercise three (3)
 //ESTRUCTURA DE DATOS   
 // Crea una estructura de datos para un cliente con estos campos:
 // Nombre completo
@@ -92,8 +94,8 @@
 // public override string ToString() => $"Nombre: {name}, Telefono: {phone}, Direccion: {address}, Email: {email}, Nuevo Cliente: {isNew}";
 // }
 
-// ejercicio 4 BUCLES
-// Ejercicio 1 - While
+// ejercise four(4) - BUCLES
+// While
 // Escribe una tabla de multiplicar del 1 al 10 para un número entero que recibe por consola. 
 // Es decir, un programa que presente para el 1:
 // 1 x 1 = 1
@@ -117,7 +119,8 @@
 //     }
 // }
 
-// Ejercicio 2 - Do while
+
+// Ejercise - Do while
 // Escribe un programa que realice estos pasos:
 // Reciba al menos un número por consola
 // Determine si el número es positivo o negativo
@@ -156,7 +159,8 @@
 //     }
 // }
 
-// Ejercicio 3 - For
+
+// Ejercise - For
 // Escribe un programa que realice estos pasos:
 // Reciba 3 datos:
 // ancho
@@ -239,41 +243,42 @@
 //     }
 // }
 
-//ejercicio 4 IF
+
+//ejercise - IF
 // using System;
 
-using System;
-using System.Collections.Generic;
+// using System;
+// using System.Collections.Generic;
 
-class Program
-{
-    static void Main(string[] args)
-    {
-        Dictionary<string, string> lenguajes = new Dictionary<string, string>()
-        {
-            { "1", "C#" },
-            { "2", "Java" },
-            { "3", "C++" }
-        };
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         Dictionary<string, string> lenguajes = new Dictionary<string, string>()
+//         {
+//             { "1", "C#" },
+//             { "2", "Java" },
+//             { "3", "C++" }
+//         };
 
-        Console.WriteLine("Seleccione un lenguaje de programación:");
-        Console.WriteLine("1. C#");
-        Console.WriteLine("2. Java");
-        Console.WriteLine("3. C++");
+//         Console.WriteLine("Seleccione un lenguaje de programación:");
+//         Console.WriteLine("1. C#");
+//         Console.WriteLine("2. Java");
+//         Console.WriteLine("3. C++");
 
-        string opcion = Console.ReadLine();
+//         string opcion = Console.ReadLine();
 
-        if (lenguajes.ContainsKey(opcion))
-        {
-            string lenguajeSeleccionado = lenguajes[opcion];
-            Console.WriteLine("Ha seleccionado: " + lenguajeSeleccionado);
-        }
-        else
-        {
-            Console.WriteLine("Opción inválida");
-        }
+//         if (lenguajes.ContainsKey(opcion))
+//         {
+//             string lenguajeSeleccionado = lenguajes[opcion];
+//             Console.WriteLine("Ha seleccionado: " + lenguajeSeleccionado);
+//         }
+//         else
+//         {
+//             Console.WriteLine("Opción inválida");
+//         }
 
-        Console.WriteLine("Presione cualquier tecla para salir...");
-        Console.ReadKey();
-    }
-}
+//         Console.WriteLine("Presione cualquier tecla para salir...");
+//         Console.ReadKey();
+//     }
+// }
